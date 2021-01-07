@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <p class="active" style="font-family: 'Pattaya', sans-serif; padding-left: 30rem; margin-top: 10px;" href="#"> <i class="fab fa-instagram"> </i> instagram</p>
+      </li> 
+<li class="nav-item ml-auto">
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Create new post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <div class="form-group">
+
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <a><i class="fas fa-camera"></i></a> <a><i class="fas fa-map-marker-alt"></i></a>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </li>
+
+      <li class="nav-item" style="margin-right: 150px">
+        <div class="dropdown">
+        <a class="nav-link dropdown-toggle btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span><i class="fas fa-cog"></i></span></a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div>
+      </div>
+      </li>
+
+    </ul>
+  
+
+    
+  </header>
+
+<div class="container">
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+  
+    <li class="nav-item">
+      <a class="nav-link active btn btn-secondary btn-ls Tooltip on bottom" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn btn-secondary  btn-ls Tooltip on bottom " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+    </li>
+    
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><main class="main">
+      <div class="galery">
+        <img src="img/1.jpg" alt="" class="galery-img">
+        <img src="img/2.jpg" alt="" class="galery-img">
+        <img src="img/3.jpg" alt="" class="galery-img">
+        <img src="img/4.jpg" alt="" class="galery-img">
+        <img src="img/5.jpg" alt="" class="galery-img">
+        <img src="img/6.jpg" alt="" class="galery-img">
+        <img src="img/7.jpg" alt="" class="galery-img">
+        <img src="img/8.jpg" alt="" class="galery-img">
+        <img src="img/9.jpg" alt="" class="galery-img">
+      </div>     
+  </div>
+
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <main class="main">
+      <div class="publics">
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/1.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/2.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/3.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/4.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/5.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/6.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/7.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/8.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+        <div class="publicacion">
+          <p class="publicacion-firstDescription">first photo</p>
+          <img src="img/9.jpg" alt="" class="publicacion-img">
+          <p class="publicacion-likes">23 likes</p>
+          <div class="publicacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti recusandae nisi laborum vitae incidunt fugit at aspernatur nobis suscipit dolorum aliquid iste veniam blanditiis, corporis, iusto qui rerum reiciendis similique necessitatibus culpa. Laudantium suscipit maxime ipsam! Adipisci, aspernatur mollitia!</div>
+        </div>
+      </div>
+    </main>
+  </div>
+    
+</div>
+</div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

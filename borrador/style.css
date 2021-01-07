@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0,0, 0.3);
+  padding: 0 100px;
+}
+.menu-contentLogo,.menu-contentButton {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-logo {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(240, 240, 240);
+}
+.menu-contentButton {
+  justify-content: flex-end;
+}
+.pages {
+  margin-top: 70px;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.pages-buton {
+  margin: 0 5px;
+}
+
+.galery {
+  min-height: 700px;
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: auto;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 5px;
+}
+.galery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post {
+  opacity: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: all .4s ;
+  visibility: hidden;
+}
+.post-card {
+  transform: all .4s ;
+  width: 400px;
+  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transform: translatey(30%);
+  opacity: 0;
+}
+.post-contentButon {
+  display: flex;
+  justify-content: flex-end;
+}
+.animation-post {
+  animation: post .4s ease-in-out  forwards;
+}
+.animation-contentPost {
+  animation: contentPost .4s ease-in-out  forwards;
+  visibility: visible;
+  
+}
+@keyframes post {
+  to {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+@keyframes contentPost {
+  to {
+    /* transform: translatey(30%); */
+    opacity: 1;
+  }
+}
+
+.publics {
+  width: 50%;
+  margin: auto;
+}
+.publicacion-img {
+  width: 100%;
+
+}
+
+.publicacion {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+} 
+
+.publicacion-firstDescription {
+  font-size: 20px;
+}
